@@ -7,11 +7,28 @@
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <script src="https://kit.fontawesome.com/9c98ae8183.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        input {
+            max-width: 14rem;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
-            Header
+            <div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="search" id="search">
+                </div>
+
+                <div>
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
         </header>
         <main class="section">
             <div class="project-section">
@@ -187,21 +204,55 @@
         <aside>
             <nav>
                 <div class="logo">
+                    <img class="dashboard" src="./Icons/view-dashboard.svg" alt="Dashboard Icon">
                     <p>Dashboard</p>
                 </div>
 
+                <ul class="nav-list-top nav-list">
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-user"></i>
+                        <a href="#">Profile</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-message"></i>
+                        <a href="#">Messages</a>
+                    </li>
+                    <li>
+                        <i class="ri-chat-history-line"></i>
+                        <a href="#">History</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-list-check"></i>
+                        <a href="#">Tasks</a>
+                    </li>
+                    <li>
+                        <i class="ri-group-fill"></i>
+                        <a href="#">Communities</a>
+                    </li>
+                </ul>
+
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                    <li>
+                        <i class="fa-solid fa-gear"></i>
+                        <a href="#">Settings</a>
+                    </li>
+                    <li>
+                        <i class="ri-question-answer-line"></i>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-shield"></i>
+                        <a href="#">Privacy</a>
+                    </li>
                 </ul>
             </nav>
         </aside>
         <footer>
-            Footer
+            <p>Copyright &copy; Dashboard by Billy English</p>
         </footer>
     </div>
 </body>
