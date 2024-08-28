@@ -8,7 +8,9 @@
     list-style-type: none;
 }
 
-html, 
+html, body {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -26,6 +28,38 @@ header {
     display: grid;
     grid-column-start: 5;
     grid-column-end: 12;
+}
+
+.fa-magnifying-glass {
+    min-width: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.search-panel {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+input {
+    min-width: 30rem;
+    min-height: 1.75rem;
+    border-radius: .75rem;
+}
+
+.search-bar p {
+    font-size: 1.15rem;
+    font-weight: 550;
+}
+
+.notification {
+    width: 1.5rem;
 }
 
 /* Main Section */
@@ -180,7 +214,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: .5rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .logo p {
@@ -202,6 +236,13 @@ footer {
 }
 
 footer p {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1rem 0;
+}
+
+.fa-github {
+    font-size: 1.6rem;
+    padding-left: .2rem;
 }
