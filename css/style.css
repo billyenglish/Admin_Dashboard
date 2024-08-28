@@ -24,7 +24,7 @@ body {
 header {
     border: 1px solid black;
     display: grid;
-    grid-column-start: 7;
+    grid-column-start: 5;
     grid-column-end: 12;
 }
 
@@ -32,10 +32,11 @@ header {
 
 main {
     display: grid;
-    grid-column-start: 7;
+    grid-column-start: 5;
     grid-column-end: 12;
     justify-content: center;
     border: 1px solid black;
+    padding: 1rem 0;
 }
 
 .section {
@@ -136,10 +137,59 @@ main {
 aside {
     display: grid;
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 4;
     border: 1px solid black;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-list-top {
+    padding-top: 1rem;
+}
+
+.nav-list-top i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 3rem;
+    padding: .5rem;
+}
+
+.nav-list-top li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding-bottom: .25rem;
+}
+
+.nav-list-top a {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding-top: 2rem;
+}
+
+.logo p {
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+
+.dashboard {
+    width: 3.5rem;
 }
 
 /* Footer Section */
